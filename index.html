@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Anime Template">
+    <meta name="keywords" content="Anime, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHANTOMARTS</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <!--<link rel="stylesheet" href="css/plyr.css" type="text/css"--->
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css"> 
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html">
+                           <h1>PHANTOM<span>ARTS</span></h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Homepage</a></li>
+                                <li><a href="">Wallpapers <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="">Wallpapers</a></li>
+                                        <li><a href="anime.html">Anime</a></li>
+                                        <li><a href="animals.html">Abstract</a></li>
+                                        <li><a href="cars.HTML">Cars</a></li>
+                                        <li><a href="dark.HTML">Dark/Scary</a></li>
+                                        <li><a href="nature.HTML">Nature</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="#" class="search-switch" id="searchSwitch"><span class="icon_search"></span></a>
+                        <a href="./login.html"><span class="icon_profile"></span></a>
+                    </div>
+                    <div id="searchBar" class="search-bar">
+                        <input type="text" placeholder="Search..." />
+                        <button id="closeSearch">Close</button>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+   <section class="hero">
+        <div class="container">
+            <div class="hero__slider owl-carousel">
+                <div class="hero__items set-bg" data-setbg="img/hero/scary.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Creepy</div>
+                                <h2>Hunted House</h2>
+                                <a href="#"><span>Download</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="img/hero/nature2.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Nature</div>
+                                <h2>SunSet</h2>
+                                <a href="#"><span>Download</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="img/hero/abstract21.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Designs</div>
+                                <h2>Graphite</h2>
+                                <a href="#"><span>Download</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="img/hero/captain.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Anime</div>
+                                <h2>One Piece</h2>
+                                <a href="#"><span>Download</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="img/hero/slam.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Cars</div>
+                                <h2>Slam Car</h2>
+                                <a href="#"><span>Download</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- Hero Section End -->
+
+    <!--MODAL Image-->
+    <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="trending__product">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Trending</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="btn__all">
+                                    <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/class.jpg">
+                                        <div class="ep">3D</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 13</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 8000</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/class.jpg')">Classic Cars</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/abstract1.jpg">
+                                        <div class="ep">4K</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 10</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 270</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/abstract1.jpg')">Graphite Design</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/dark8.jpg">
+                                        <div class="ep">HD</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 20</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 900</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/dark8.jpg')">Dark Background</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/nature15.jpg">
+                                        <div class="ep">3D</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 40</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 1999</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/nature15.jpg')">Nature's Beauty</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/trend-6.jpg">
+                                        <div class="ep">HD</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 8</div>
+                                        <div class="view"><i class="fa fa-eye"></i>4000</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/trend-6.jpg')">Anime</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/104216.jpg">
+                                        <div class="ep">4K</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 25</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9173</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/104216.jpg')">Fighter's Jet</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__product">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Popular</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="btn__all">
+                                    <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/black6.jpg">
+                                        <div class="ep">HD</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 08</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 370</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/black6.jpg')">Black Car's</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/ass.jpg">
+                                        <div class="ep">4K</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 80</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 3098</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/ass.jpg')">Assasin's Creed</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/543133584.jpg">
+                                        <div class="ep">3D</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 100</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 590</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/543133584.jpg')">Minions</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/batman.jpg">
+                                        <div class="ep">4K</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 200</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 8950</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/batman.jpg')">DC Comics</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/scary20.jpg">
+                                        <div class="ep">3D</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 17</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 700</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/scary20.jpg')">Scary</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/nature1.jpg">
+                                        <div class="ep">4K</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 39</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 150</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/nature1.jpg')">Picnic Garden</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent__product">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Recently Added</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="btn__all">
+                                    <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/captain.jpg">
+                                        <div class="ep">3D</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 300</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 2000</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/captain.jpg')">Marvel</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/call.jpg">
+                                        <div class="ep">HD</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 850</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/call.jpg')">Call Of Duty</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/avatar.jpg">
+                                        <div class="ep">4K</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 90</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 1045</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/avatar.jpg')">Avatar</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/angry.jpg">
+                                        <div class="ep">3D</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 19</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 500</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/angry.jpg')">Angry Birds</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/spider.jpg">
+                                        <div class="ep">HD</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 60</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 1914</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/spider.jpg')">SpiderMan</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/bt.jpg">
+                                        <div class="ep">4K</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 79</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 1052</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <h5><a href="javascript:void(0);" onclick="openModal('img/trending/bt.jpg')">Animals</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="live__product">
+                        <div class="row">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="product__sidebar">
+                        <div class="product__sidebar__view">
+                            <div class="section-title">
+                                <h5>Wallpapers</h5>
+                            </div>
+                            <ul class="filter__controls">
+                                <li class="active" data-filter="*">All</li>
+                                <li data-filter=".week">HD</li>
+                                <li data-filter=".month">3D</li>
+                                <li data-filter=".years">4K</li>
+                            </ul>
+                            <div class="filter__gallery">
+                                <a href="javascript:void(0);" onclick="openModal('img/sidebar/341.jpg')">
+                                <div class="product__sidebar__view__item set-bg mix years"
+                                data-setbg="img/sidebar/341.jpg">
+                                <div class="ep">4K</div>
+                                <div class="view"><i class="fa fa-eye"></i> 300</div>
+                                <h5>Nature</h5>
+                            </div>
+                        </a>
+
+                            <a href="javascript:void(0);" onclick="openModal('img/sidebar/342.jpg')"> 
+                           <div class="product__sidebar__view__item set-bg mix  week"
+                            data-setbg="img/sidebar/342.jpg">
+                            <div class="ep">HD</div>
+                            <div class="view"><i class="fa fa-eye"></i> 1098</div>
+                            <h5>Two Face</h5>
+                        </div>
+                    </a>
+
+                    <a href="javascript:void(0);" onclick="openModal('img/sidebar/343.jpg')">
+                        <div class="product__sidebar__view__item set-bg mix month"
+                        data-setbg="img/sidebar/343.jpg">
+                        <div class="ep">3D</div>
+                        <div class="view"><i class="fa fa-eye"></i> 590</div>
+                        <h5>OuterSpace</h5>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" onclick="openModal('img/sidebar/344.jpg')">
+                    <div class="product__sidebar__view__item set-bg mix  week"
+                    data-setbg="img/sidebar/344.jpg">
+                    <div class="ep">HD</div>
+                    <div class="view"><i class="fa fa-eye"></i> 2490</div>
+                    <h5>WildLife</h5>
+                </div>
+            </a>
+
+            <a href="javascript:void(0);" onclick="openModal('img/sidebar/345.jpg')">
+                <div class="product__sidebar__view__item set-bg mix years"
+                data-setbg="img/sidebar/345.jpg">
+                <div class="ep">4K</div>
+                <div class="view"><i class="fa fa-eye"></i> 7860</div>
+                <h5>Frozen</h5>
+            </div>
+        </a>
+
+        <a href="javascript:void(0);" onclick="openModal('img/sidebar/346.jpg')">
+            <div class="product__sidebar__view__item set-bg mix month"
+                data-setbg="img/sidebar/346.jpg">
+                <div class="ep">3D</div>
+                <div class="view"><i class="fa fa-eye"></i> 3480</div>
+                <h5>GTA</h5>
+            </div>
+        </a>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer__logo">
+                    <a href="./index.html"> <h1>HD<span>Wallpaper</span></h1></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="./index.html">Homepage</a></li>
+                        <li><a href="">Categories</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This piece was created<i class="fa fa-heart" aria-hidden="true"></i> by Phatom's Work</p>
+
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Search model Begin -->
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch"><i class="icon_close"></i></div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search model end -->
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/player.js"></script>-->
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

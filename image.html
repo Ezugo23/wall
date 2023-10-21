@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+   body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+    }
+
+    #image-display {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #fff;
+    }
+
+    #resolution-selector {
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #download-button {
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+        .image-container {
+            padding: 10px;
+        }
+
+        #resolution-selector {
+            margin-top: 5px;
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+
+        #download-button {
+            font-size: 16px;
+            padding: 8px 16px;
+        }
+    }
+
+    /* Media query for larger screens */
+    @media (min-width: 1200px) {
+        .image-container {
+            padding: 30px;
+        }
+
+        #resolution-selector {
+            margin-top: 15px;
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+
+        #download-button {
+            font-size: 24px;
+            padding: 12px 24px;
+        }
+        }
+  </style>
+  <div class="image-container">
+    <img id="image-display" width="80%">
+    <select id="resolution-selector">
+        <option value="hdimg/original-image.jpg">Original</option>
+        <option value="hdimg/image-800x600.jpg">800x600</option>
+        <option value="hdimg/image-400x300.jpg">400x300</option>
+    </select>
+    <a id="download-button" href="#" download="image.jpg">Download</a>
+</div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  // Get the image and download button elements
+  const imageDisplay = document.getElementById("image-display");
+  const downloadButton = document.getElementById("download-button");
+
+  // Get the image source URL from the query parameter
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const imageUrl = urlParams.get("image");
+
+  // Set the image source
+  if (imageUrl) {
+      imageDisplay.src = imageUrl;
+  }
+
+  // Set the download link
+  if (imageUrl) {
+      downloadButton.href = imageUrl;
+  } else {
+      // Disable the download button when the image URL is not provided
+      downloadButton.style.display = "none";
+  }
+});
+
+    </script>
+</body>
+</html>
