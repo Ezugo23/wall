@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (isValid) {
                 // Create a new form and add it to the document
                 var newForm = document.createElement('form');
-                newForm.setAttribute('action', 'Wallpapers.html');
+                newForm.setAttribute('action', 'Wallpapers.HTML');
                 newForm.setAttribute('method', 'GET');
 
                 const formData = {
