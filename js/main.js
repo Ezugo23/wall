@@ -90,22 +90,6 @@
      });
 })(jQuery);
 
- // Search model
- document.addEventListener("DOMContentLoaded", function () {
-    const searchSwitch = document.getElementById("searchSwitch");
-    const searchBar = document.getElementById("searchBar");
-    const closeSearch = document.getElementById("closeSearch");
-
-    searchSwitch.addEventListener("click", function (e) {
-        e.preventDefault();
-        searchBar.style.display = "block";
-    });
-
-    closeSearch.addEventListener("click", function () {
-        searchBar.style.display = "none";
-    });
-});
-
 /*-------------
 SIgn/Login 
 -------------*/
